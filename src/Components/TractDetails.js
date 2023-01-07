@@ -12,6 +12,7 @@ function TractDetails() {
     axios
       .get(`${API}/tracts/${index}`)
       .then((response) => {
+        console.log(response);
         setTract(response.data);
       })
       .catch((error) => navigate(`/not-found`));

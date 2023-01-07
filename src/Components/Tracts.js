@@ -15,7 +15,10 @@ function Tracts() {
   useEffect(() => {
     axios
       .get(`${API}/tracts`)
-      .then((response) => setTracts(response.data))
+      .then((response) => {
+        console.log("r", response);
+        setTracts(response.data);
+      })
       .catch((c) => console.warn("catch", c));
   }, []);
   return (
