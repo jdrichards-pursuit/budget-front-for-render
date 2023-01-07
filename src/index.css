@@ -110,11 +110,11 @@ h6 span {
 
 button {
   color: var(--jet);
-  transition: all 0.3s linear;
+  transition: all 1s linear;
 }
 
 button:hover {
-  color: #2f2e2b;
+  color: #f8fbfb;
   opacity: 0.9;
 }
 
